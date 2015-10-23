@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/weceem-isk.iml" filepath="$PROJECT_DIR$/weceem-isk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weceem-isk-grailsPlugins.iml" filepath="$PROJECT_DIR$/weceem-isk-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../grails-plugins/weceem-plugin/weceem-plugin.iml" filepath="$PROJECT_DIR$/../grails-plugins/weceem-plugin/weceem-plugin.iml" />
+    </modules>
+  </component>
+</project>

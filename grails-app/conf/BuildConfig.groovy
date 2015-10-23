@@ -11,6 +11,9 @@ grails.war.resources = { stagingDir, args ->
 grails.tomcat.jvmArgs = ["-Xmx1024m", "-XX:MaxPermSize=256m", '-verbose:class']
 
 grails.project.dependency.resolver = "maven" // or ivy
+
+grails.plugin.location.weceem = "/Users/zak/builds/grails-plugins/weceem-plugin"
+
 grails.project.dependency.resolution = {
 	// inherit Grails' default dependencies
 	inherits( "global" ) {
@@ -32,10 +35,11 @@ grails.project.dependency.resolution = {
         runtime "org.apache.ant:ant:1.8.0"
         compile 'org.apache.ant:ant-launcher:1.8.0'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
+        runtime "postgresql:postgresql:9.1-901.jdbc4"
 	}
 
 	plugins {
-        compile ':weceem:1.5-SNAPSHOT'
+        //compile ':weceem:1.5-SNAPSHOT'
         // plugins for the build system only
         build ':tomcat:7.0.55'
         compile ':cache:1.1.8'

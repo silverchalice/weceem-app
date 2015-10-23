@@ -150,7 +150,7 @@ grails {
             interceptUrlMap = [
                     '/admin/users/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
                     '/admin/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
-                    '/ck/**': ['isRememberMe()'],
+                    '/ck/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
                     '/*': ['permitAll'],
                     '/login/**': ['permitAll'],
                     '/logout/**': ['permitAll']
