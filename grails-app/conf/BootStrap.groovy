@@ -1,3 +1,4 @@
+import com.iskbiocides.model.Dealer
 import org.apache.commons.logging.LogFactory
 import org.codehaus.groovy.grails.web.servlet.GrailsApplicationAttributes
 import grails.util.Environment
@@ -66,6 +67,18 @@ class BootStrap {
             // Stop dev-mode reloads triggering duplicate data
             initialised = true
         }
+
+        //add initial dealer record
+
+        if(!Dealer.list().size()) {
+            println "CREATING INITIAL DEALER..."
+            new Dealer(name: 'BLAIRSTOWN DISTRIBUTORS',
+                    phone: '800-524-1093',
+                    website: 'www.blairstowndistributors.com',
+                    products: 'WOODguard, WOODguard XL, WOODguard SWO, BEE Gone', state: 'az').save flush: true
+        }
+
+
     }
     
     private initNewInstallation(context) {

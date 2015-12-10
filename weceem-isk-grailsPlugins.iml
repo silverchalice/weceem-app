@@ -141,7 +141,7 @@
     <content url="file://$USER_HOME$/.grails/2.4.4/projects/weceem/plugins/weceem-spring-security-1.4">
       <sourceFolder url="file://$USER_HOME$/.grails/2.4.4/projects/weceem/plugins/weceem-spring-security-1.4/src/groovy" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.4.4 (2)" level="application" />
     <orderEntry type="module-library" exported="">
