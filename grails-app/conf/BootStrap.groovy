@@ -72,10 +72,10 @@ class BootStrap {
 
         if(!Dealer.list().size()) {
             println "CREATING INITIAL DEALER..."
-            new Dealer(name: 'BLAIRSTOWN DISTRIBUTORS',
+            new Dealer(company: 'BLAIRSTOWN DISTRIBUTORS',
                     phone: '800-524-1093',
                     website: 'www.blairstowndistributors.com',
-                    products: 'WOODguard, WOODguard XL, WOODguard SWO, BEE Gone', state: 'az').save flush: true
+                    products: 'WOODguard, WOODguard XL, WOODguard SWO, BEE Gone', state: 'AZ').save flush: true
         }
 
 

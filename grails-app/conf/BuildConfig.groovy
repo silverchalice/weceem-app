@@ -62,6 +62,8 @@ grails.project.dependency.resolution = {
         compile ":taggable:1.1.0"
         compile ":mail:1.0.7"
 
+        compile "org.grails.plugins:csv:0.3.1"
+
         compile ":weceem-spring-security:1.4"
         compile ":spring-security-core:2.0-RC4"
 }

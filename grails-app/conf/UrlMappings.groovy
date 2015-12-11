@@ -13,5 +13,8 @@ class UrlMappings {
         "/admin/users/$action?/$id?"(controller: 'CMSUser')
 
         "/admin/profile/$action/$id?"(controller: 'userProfile')
+
+        "/dealer/$action?/$id?"(controller: 'dealer')
+
     }
 }
