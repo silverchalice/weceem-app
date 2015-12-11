@@ -263,7 +263,8 @@ environments {
                    'grails.app.task'
 */
            info    'org.weceem',
-                   'grails.app'
+                   'grails.app',
+                   'org.hibernate.tool.hbm2dll'
 
            error   'org.codehaus.groovy.grails.web.servlet',  //  controllers
                    'org.codehaus.groovy.grails.plugins', // plugins
