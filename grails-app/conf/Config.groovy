@@ -133,7 +133,7 @@ grails {
             // Turn of user caching, acegi plugin requires diskstore cache by default, which we don't want.
             cacheUsers = false
     
-            /** login user domain class name and fields */
+            /** login user domain class company and fields */
             userLookup.userDomainClassName = "org.weceem.auth.CMSUser"
             userLookup.userNamePropertyName = "username"
             userLookup.passwordPropertyName = "passwd"
@@ -141,7 +141,7 @@ grails {
             userLookup.authoritiesPropertyName = "authorities"
 
             /**
-            * Authority domain class authority field name
+            * Authority domain class authority field company
             * authorityFieldInList
             */
             authority.className = "org.weceem.auth.CMSRole"
@@ -150,6 +150,7 @@ grails {
             interceptUrlMap = [
                     '/admin/users/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
                     '/admin/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
+                    '/utility/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
                     '/ck/**': ['hasRole(\'ROLE_ADMIN\')', 'isRememberMe()'],
                     '/*': ['permitAll'],
                     '/login/**': ['permitAll'],
@@ -213,6 +214,10 @@ if (config?.elasticSearch) {
     elasticSearch.client.mode = 'local'
     elasticSearch.index.store.type = 'memory' // store local node in memory and not on disk
 }
+
+
+//weceem.security.policy.path='ExampleSecurityPolicy.groovy'
+
 
 environments {
    development {

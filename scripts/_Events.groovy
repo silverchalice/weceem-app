@@ -11,7 +11,7 @@ if (Environment.current == Environment.PRODUCTION) {
         root.appendNode {
             'resource-ref'{
                 'description'('The JNDI Database resource')
-                'res-ref-name'('jdbc/'+jndiName)
+                'res-ref-company'('jdbc/'+jndiName)
                 'res-type'('javax.sql.DataSource')
                 'res-auth'('Container')
             }
@@ -21,7 +21,7 @@ if (Environment.current == Environment.PRODUCTION) {
         root.appendNode {
             'resource-ref'{
                 'description'('The Mail session resource')
-                'res-ref-name'('mail/Session')
+                'res-ref-company'('mail/Session')
                 'res-type'('javax.mail.Session')
                 'res-auth'('Container')
             }
