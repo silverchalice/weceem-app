@@ -32,9 +32,9 @@
 					
 						<g:sortableColumn property="address" title="${message(code: 'dealer.address.label', default: 'Address')}" />
 					
-						<g:sortableColumn property="website" title="${message(code: 'dealer.website.label', default: 'Website')}" />
+						<g:sortableColumn property="address2" title="${message(code: 'dealer.address2.label', default: 'Address2')}" />
 					
-						<g:sortableColumn property="email" title="${message(code: 'dealer.email.label', default: 'Email')}" />
+						<g:sortableColumn property="website" title="${message(code: 'dealer.website.label', default: 'Website')}" />
 					
 					</tr>
 				</thead>
@@ -50,9 +50,9 @@
 					
 						<td>${fieldValue(bean: dealer, field: "address")}</td>
 					
-						<td>${fieldValue(bean: dealer, field: "website")}</td>
+						<td>${fieldValue(bean: dealer, field: "address2")}</td>
 					
-						<td>${fieldValue(bean: dealer, field: "email")}</td>
+						<td>${fieldValue(bean: dealer, field: "website")}</td>
 					
 					</tr>
 				</g:each>

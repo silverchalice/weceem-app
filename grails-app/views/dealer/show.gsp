@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list dealer">
 			
-				<g:if test="${dealer?.name}">
+				<g:if test="${dealer?.company}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="dealer.name.label" default="Name" /></span>
+					<span id="company-label" class="property-label"><g:message code="dealer.company.label" default="Company" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${dealer}" field="name"/></span>
+						<span class="property-value" aria-labelledby="company-label"><g:fieldValue bean="${dealer}" field="company"/></span>
 					
 				</li>
 				</g:if>
@@ -55,6 +55,15 @@
 					<span id="address-label" class="property-label"><g:message code="dealer.address.label" default="Address" /></span>
 					
 						<span class="property-value" aria-labelledby="address-label"><g:fieldValue bean="${dealer}" field="address"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${dealer?.address2}">
+				<li class="fieldcontain">
+					<span id="address2-label" class="property-label"><g:message code="dealer.address2.label" default="Address2" /></span>
+					
+						<span class="property-value" aria-labelledby="address2-label"><g:fieldValue bean="${dealer}" field="address2"/></span>
 					
 				</li>
 				</g:if>
@@ -91,6 +100,24 @@
 					<span id="state-label" class="property-label"><g:message code="dealer.state.label" default="State" /></span>
 					
 						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${dealer}" field="state"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${dealer?.city}">
+				<li class="fieldcontain">
+					<span id="city-label" class="property-label"><g:message code="dealer.city.label" default="City" /></span>
+					
+						<span class="property-value" aria-labelledby="city-label"><g:fieldValue bean="${dealer}" field="city"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${dealer?.zip}">
+				<li class="fieldcontain">
+					<span id="zip-label" class="property-label"><g:message code="dealer.zip.label" default="Zip" /></span>
+					
+						<span class="property-value" aria-labelledby="zip-label"><g:fieldValue bean="${dealer}" field="zip"/></span>
 					
 				</li>
 				</g:if>

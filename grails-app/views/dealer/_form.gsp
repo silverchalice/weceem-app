@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: dealer, field: 'name', 'error')} required">
-	<label for="name">
-		<g:message code="dealer.name.label" default="Name" />
+<div class="fieldcontain ${hasErrors(bean: dealer, field: 'company', 'error')} required">
+	<label for="company">
+		<g:message code="dealer.company.label" default="Company" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="name" required="" value="${dealer?.name}"/>
+	<g:textField name="company" required="" value="${dealer?.company}"/>
 
 </div>
 
@@ -35,6 +35,15 @@
 		
 	</label>
 	<g:textField name="address" value="${dealer?.address}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: dealer, field: 'address2', 'error')} ">
+	<label for="address2">
+		<g:message code="dealer.address2.label" default="Address2" />
+		
+	</label>
+	<g:textField name="address2" value="${dealer?.address2}"/>
 
 </div>
 
@@ -71,6 +80,24 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="state" required="" value="${dealer?.state}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: dealer, field: 'city', 'error')} ">
+	<label for="city">
+		<g:message code="dealer.city.label" default="City" />
+		
+	</label>
+	<g:textField name="city" value="${dealer?.city}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: dealer, field: 'zip', 'error')} ">
+	<label for="zip">
+		<g:message code="dealer.zip.label" default="Zip" />
+		
+	</label>
+	<g:textField name="zip" value="${dealer?.zip}"/>
 
 </div>
 
